@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: black;
+}
+
+.header {
+  padding: 10px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+
+}
+
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+
+.footer {
+  padding: 20px;
+  text-align: right;
+  background: white;
+  margin-top: 20px
+  }
+@media screen and (max-width: 1000px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+  img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h6>Difference between widow object and Document object</h6>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Window object:-</h2>
+      <p>The <b>Browser Object Model</b> contains objects that represent the current browser window or tab. The topmost object in the BOM is the window object representing the window or tab or an iframe sometimes.</p>
+      <p>Window object has properties like browser history, location and the device’s screen etc. In case of multi tab browser, a window object represents a single tab, but some of its properties like <b>innerHeight, innerWidth and methods like resizeTo() </b> will affect the whole browser window.</p>
+ <img src="https://static.javatpoint.com/images/javascript/bom.jpg" width="300" height="250">
+</div>
+
+    <div class="card">
+      <h2>Document object:-</h2>
+      <p>The document object represents the whole <b>html document.</b></p>
+<p>When html document is loaded in the browser, it becomes a document object. It is the root element that represents the html document. It has properties and methods. By the help of document object, we can add dynamic content to our web page.</p>
+ <img src="https://static.javatpoint.com/images/javascript/dom.jpg" width="300" height="250">
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>Difference between window and Document object:-</h2>
+      <p><b>--->window object </b>represents the browser window itself and provides methods for interacting with the browser's environment,while <b>document object</b> represents the current web page's content and structure, allowing manipulation using the DOM.
+</p>
+<p><b>--->Document</b> represents any HTML document or web page that is loaded in the browser,while <b>Window </b>represents a browser window or frame that displays the contents of the webpage.   
+</p>
+<p><b>--->Document</b> object is loaded inside the <b>window</b>,while window is the very first object that is loaded in the browser.</p>
+<p><b>---></b>All the <b>tags, elements with attributes</b> in HTML are part of the <b>document</b>,while <b>Global objects, functions, and variables</b> of JavaScript are members of the <b>window</b> object.</p>
+<p><b>--->Document</b> is part of BOM (browser object model) and dom (Document object model),while <b>the window</b> is part of BOM, not DOM.</p>
+<p><b>---></b>Properties of document objects such as title, body, cookies, etc <b>can also be accessed by a window</b> like this window. document.title,<b>while the Properties of the window object </b>cannot be accessed by the document object.</b></p>
+</div>
+
+<div class="footer">
+  <p><b>written by</b></p>
+  <p style="font-family:cursive;">shanmathi J.L</p>
+</div>
+
+</body>
+</html>
